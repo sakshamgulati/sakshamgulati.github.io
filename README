@@ -1,0 +1,57 @@
+Saksham Gulati - Personal Portfolio
+This repository contains the source code for my personal portfolio website. It's a modern, responsive, single-page site designed to showcase my skills, projects, and professional experience as a Data Scientist.
+
+Live Demo: sakshamgulati.github.io 
+
+✨ Key Features
+Sleek, Modern Design: A clean and visually appealing layout inspired by contemporary web design trends.
+
+Animated Hero Section: An engaging "typing code" animation to introduce myself.
+
+Responsive Layout: Fully optimized for a seamless experience on all devices, from mobile phones to desktops.
+
+Project Showcase: A dedicated "My Work" section to feature key projects with descriptions and media.
+
+Interactive Elements: Smooth scrolling, hover effects, and a functional contact form.
+
+Modular Codebase: The code is logically separated into HTML, CSS, and JavaScript files for easy maintenance and scalability.
+
+🛠️ Tech Stack
+This portfolio is built with a focus on simplicity and performance using standard web technologies.
+
+HTML5: For the core structure and content.
+
+Tailwind CSS: A utility-first CSS framework for rapid and responsive UI development.
+
+JavaScript (ES6+): For interactive elements like the typing animation and smooth scrolling.
+
+Font Awesome: For scalable vector icons.
+
+FormSubmit: A free, easy-to-use backend service for handling the contact form submissions without a server.
+
+GitHub Pages: For hosting the live website.
+
+🚀 Setup and Installation
+To get a local copy up and running, follow these simple steps.
+
+Prerequisites
+You just need a modern web browser!
+
+Installation
+Clone the repository:
+
+git clone https://github.com/your-username/your-portfolio-repository-name.git
+
+Navigate to the project directory:
+
+cd your-portfolio-repository-name
+
+Open index.html in your browser:
+You can simply double-click the index.html file, or if you have a live server extension (like Live Server in VS Code), you can use that to view the site.
+
+📬 Contact
+LinkedIn: Your LinkedIn Profile URL
+
+GitHub: @your-github-username
+
+Email: sakshamgulati123@gmail.com
