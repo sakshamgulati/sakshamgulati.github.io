@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksham Gulati - Data Scientist</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Your Custom CSS (Must be after other stylesheets) -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        // Moved Tailwind config here to ensure it's loaded before the body renders
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-purple': '#1a103c',
+                        'light-purple': '#f5f3ff',
+                        'brand-purple': '#7c3aed',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md fixed w-full z-20 top-0">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-dark-purple">Saksham Gulati</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#work" class="text-gray-600 hover:text-brand-purple font-medium">Work</a>
+                <a href="#about" class="text-gray-600 hover:text-brand-purple font-medium">About</a>
+                <a href="#contact" class="text-gray-600 hover:text-brand-purple font-medium">Contact</a>
+            </div>
+             <div class="md:hidden">
+                <button id="menu-btn" class="text-dark-purple focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#work" class="block py-2 px-6 text-sm hover:bg-light-purple">Work</a>
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-light-purple">About</a>
+            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-light-purple">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg h-screen flex items-center justify-center text-white">
+            <div class="text-center">
+                <div class="bg-gray-900/30 rounded-lg p-8 inline-block">
+                    <pre><code id="code-block" class="font-mono text-left text-lg md:text-xl"></code></pre>
+                </div>
+                <div class="mt-12">
+                    <div class="inline-flex items-center space-x-6 social-link-group p-3 rounded-full">
+                        <a href="#" target="_blank" class="text-white hover:text-gray-300"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                        <a href="#" target="_blank" class="text-white hover:text-gray-300"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="#" target="_blank" class="text-white hover:text-gray-300"><i class="fab fa-google-drive fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Work Section -->
+        <section id="work" class="py-20 lg:py-32">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-4xl font-bold">My Work</h2>
+                <div class="space-y-20">
+                    <!-- Project Placeholder 1 -->
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div class="bg-gray-200 aspect-video rounded-lg flex items-center justify-center">
+                                <p class="text-gray-500">Project Video/Image</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold mb-4">Co-Creator of a NLP Application</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                <li>Architect of the Full Application Suite & Responsive Website Infrastructure.</li>
+                                <li>Expertise in Python, Flask, and MongoDB.</li>
+                                <li>Pioneered Advanced Sentiment Analysis Algorithms for Enhanced User Experience.</li>
+                                <li>Contributed to Open Source NLP Projects, Demonstrating Commitment to Knowledge Sharing.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Project Placeholder 2 -->
+                     <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="md:order-2">
+                            <div class="bg-gray-200 aspect-video rounded-lg flex items-center justify-center">
+                                <p class="text-gray-500">Project Video/Image</p>
+                            </div>
+                        </div>
+                        <div class="md:order-1">
+                            <h3 class="text-3xl font-bold mb-4">Data Science at a Tech Giant</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                <li>Contributed to web-based applications, services, or platforms.</li>
+                                <li>Developed applications, tools & software products using languages like C++, C#, Python.</li>
+                                <li>Analyzed large datasets to extract actionable insights and drive business decisions.</li>
+                                <li>Built and deployed machine learning models for predictive analytics.</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- Project Placeholder 3 -->
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div class="bg-gray-200 aspect-video rounded-lg flex items-center justify-center">
+                                <p class="text-gray-500">Project Video/Image</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold mb-4">3 Different SWE Internships</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                <li>Immersed in Coding Challenges at CipherCraft.</li>
+                                <li>Navigated Development Projects at PulsePoint Startups.</li>
+                                <li>Contributed to Various Tech Ventures.</li>
+                                <li>Gained experience in agile development and team collaboration.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="bg-light-purple py-20 lg:py-32">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-4xl font-bold">About Me</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-gray-600 leading-relaxed">
+                    <p>I'm a passionate and versatile data scientist with proficiency in a diverse range of technologies, including Python, SQL, and modern cloud platforms. My journey in the tech world has been marked by innovation, collaboration, and a commitment to excellence.</p>
+                    <p>One of my significant achievements includes developing an end-to-end NLP application, where I not only implemented cutting-edge features but also prioritized robust data privacy protocols to ensure user data integrity. This experience reflects my dedication to delivering solutions that not only push technological boundaries but also prioritize user trust.</p>
+                    <p>Beyond my core projects, I actively contribute to open-source initiatives, firmly believing in the power of knowledge sharing and collaborative development. It's my way of giving back to the tech community and staying engaged with the latest industry trends.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="bg-light-purple pb-20 lg:pb-32">
+            <div class="container mx-auto px-6">
+                 <h2 class="text-4xl font-bold text-center mb-12">Suffering from skill issues</h2>
+                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-4xl mx-auto">
+                    <!-- Skill Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                        <img src="https://placehold.co/64x64/f0db4f/000000?text=JS" alt="JavaScript" class="h-16 mb-4 rounded-md">
+                        <h3 class="font-semibold">JavaScript</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                        <img src="https://placehold.co/64x64/3776ab/ffffff?text=Py" alt="Python" class="h-16 mb-4 rounded-md">
+                        <h3 class="font-semibold">Python</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                        <img src="https://placehold.co/64x64/4db33d/ffffff?text=Mongo" alt="MongoDB" class="h-16 mb-4 rounded-md">
+                        <h3 class="font-semibold">MongoDB</h3>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                        <img src="https://placehold.co/64x64/336791/ffffff?text=PSQL" alt="PostgreSQL" class="h-16 mb-4 rounded-md">
+                        <h3 class="font-semibold">PostgreSQL</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                        <img src="https://placehold.co/64x64/61dafb/000000?text=React" alt="React" class="h-16 mb-4 rounded-md">
+                        <h3 class="font-semibold">React/Next</h3>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                        <img src="https://placehold.co/64x64/d9534f/ffffff?text=Redis" alt="Redis" class="h-16 mb-4 rounded-md">
+                        <h3 class="font-semibold">Redis</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                        <img src="https://placehold.co/64x64/0087d1/ffffff?text=Azure" alt="AWS/Azure" class="h-16 mb-4 rounded-md">
+                        <h3 class="font-semibold">AWS/Azure</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center">
+                        <img src="https://placehold.co/64x64/f29111/ffffff?text=SQL" alt="SQL" class="h-16 mb-4 rounded-md">
+                        <h3 class="font-semibold">SQL</h3>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-bg py-20 lg:py-32 text-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="max-w-md">
+                        <h2 class="text-5xl font-bold mb-4">Wanna talk?</h2>
+                        <p class="text-purple-200">Contact me with any questions or just to say a few nice words... or mean ones. Up to you... free will and all.</p>
+                    </div>
+                    <div>
+                        <form action="https://formsubmit.co/sakshamgulati123@gmail.com" method="POST" class="space-y-6">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission!">
+                            <input type="hidden" name="_captcha" value="false">
+                            
+                            <div>
+                                <label for="name" class="block mb-2 font-medium">Name</label>
+                                <input type="text" id="name" name="name" class="w-full bg-purple-400/50 border border-purple-400 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-white/50" placeholder="Your name" required>
+                            </div>
+                             <div>
+                                <label for="email" class="block mb-2 font-medium">Your email*</label>
+                                <input type="email" id="email" name="email" class="w-full bg-purple-400/50 border border-purple-400 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-white/50" placeholder="Your email address" required>
+                            </div>
+                             <div>
+                                <label for="message" class="block mb-2 font-medium">Message*</label>
+                                <textarea id="message" name="message" rows="4" class="w-full bg-purple-400/50 border border-purple-400 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-white/50" placeholder="Enter your message" required></textarea>
+                            </div>
+                            <button type="submit" class="bg-white text-dark-purple font-bold py-3 px-8 rounded-lg hover:bg-gray-200 transition-colors">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-dark-purple text-white py-6">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>Currently seeking new opportunities as a Data Scientist. Interested in collaborating? <a href="#contact" class="text-brand-purple hover:underline font-semibold">Let's get in touch.</a></p>
+        </div>
+    </footer>
+
+    <!-- Your Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

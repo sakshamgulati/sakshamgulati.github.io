@@ -1,0 +1,49 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    /* This ensures smooth scrolling behavior on the whole page */
+    scroll-behavior: smooth;
+}
+
+.hero-bg {
+    background-color: #1a103c;
+}
+
+.contact-bg {
+    background-color: #4c1d95;
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background-color: #7c3aed;
+}
+
+.code-line span {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.social-link-group {
+    background: linear-gradient(90deg, #a855f7, #6366f1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-link-group:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(124, 58, 237, 0.4);
+}
