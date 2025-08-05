@@ -1,0 +1,7 @@
+---
+# This file tells Jekyll to exclude certain directories from processing
+exclude:
+  - css/
+  - js/
+  - assets/
+---
